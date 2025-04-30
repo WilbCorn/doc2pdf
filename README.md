@@ -48,13 +48,14 @@ The interactive prompt will guide you through the process:
 ## Configuration
 You can customize the behavior by editing the settings.py file:
 
-|Setting	Description
-|COPY_NON_CONVERTIBLE_FILES	Whether to copy non-convertible files to the output (True/False)
-CONVERTIBLE_EXTENSIONS	File types that will be converted to PDF
-ADDITIONAL_COPY_EXTENSIONS	Specific file types to copy when COPY_NON_CONVERTIBLE_FILES is True
-USE_MULTITHREADING	Enable/disable multithreaded processing
-MAX_WORKERS	Maximum number of worker threads (set to 0 for auto-detection)
-EXCLUDED_FILE_PATTERNS	File patterns to exclude from processing
+| Setting | Description |
+|---------|-------------|
+| `COPY_NON_CONVERTIBLE_FILES` | Whether to copy non-convertible files to the output (True/False) |
+| `CONVERTIBLE_EXTENSIONS` | File types that will be converted to PDF |
+| `ADDITIONAL_COPY_EXTENSIONS` | Specific file types to copy when `COPY_NON_CONVERTIBLE_FILES` is True |
+| `USE_MULTITHREADING` | Enable/disable multithreaded processing |
+| `MAX_WORKERS` | Maximum number of worker threads (set to 0 for auto-detection) |
+| `EXCLUDED_FILE_PATTERNS` | File patterns to exclude from processing |
 
 ## Output Structure
 The output directory follows the same structure as the input:
