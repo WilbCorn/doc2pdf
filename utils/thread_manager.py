@@ -9,7 +9,7 @@ def get_max_workers():
     """Determine the number of worker processes to use."""
     # For LibreOffice conversions, it's safer to use fewer processes
     if MAX_WORKERS <= 0:
-        return os.cpu_count() or 4
+        return int(round(os.cpu_count() / 2)) or 4
     else:
         return MAX_WORKERS
 
