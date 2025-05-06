@@ -6,7 +6,7 @@ Application settings and configuration options.
 COPY_NON_CONVERTIBLE_FILES = True
 
 # Supported file types that can be converted
-CONVERTIBLE_EXTENSIONS = ('.ppt', '.pptx') 
+CONVERTIBLE_EXTENSIONS = ('.ppt', '.pptx', '.doc', '.docx', '.xls', '.xlsx') 
 # '.doc', '.docx', '.xls', '.xlsx' works as well, but may have some formatting issues.
 
 # Additional file types to copy (when COPY_NON_CONVERTIBLE_FILES is True)
@@ -19,7 +19,7 @@ USE_MULTITHREADING = True  # Set to False for more reliable operation
 
 # Maximum number of worker threads/processes
 # For LibreOffice conversions, a lower number is more reliable
-MAX_WORKERS = 15  # Use just 1 process for most reliable operation
+MAX_WORKERS = 1  # Use just 1 process for most reliable operation
 
 # Files to exclude from processing (temporary/lock files)
 EXCLUDED_FILE_PATTERNS = ['~$', '._', '.tmp']
