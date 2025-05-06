@@ -37,7 +37,7 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             latest
-            sha-{{ github.sha }}
+            sha-${{ github.sha }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
