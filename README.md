@@ -73,16 +73,16 @@ A powerful tool for converting document files to PDF in **Linux**, with support 
 
 You can use this tool without installing Python or LibreOffice by running it in Docker.
 
-#### Build the Docker image
+#### Pull the Docker image
 
 ```bash
-docker build -t doc2pdf .
+docker pull ghcr.io/wilbcorn/doc2pdf:latest
 ```
 
 #### Run the container
 
 ```bash
-docker run -it -p 8501:8501 --name doc2pdf1 doc2pdf
+docker run -it -p 8501:8501 --name doc2pdf ghcr.io/wilbcorn/doc2pdf
 ```
 
 Open [http://localhost:8501](http://localhost:8501) in your browser.
